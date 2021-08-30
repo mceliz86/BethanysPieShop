@@ -1,0 +1,10 @@
+﻿@model HomeViewModel
+
+<div class="row">
+
+    @foreach (var pie in Model.PiesOfTheWeek)
+    {
+        @Html.Partial("_PieCard", pie)
+    }
+
+</div>
